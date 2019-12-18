@@ -61,7 +61,7 @@ module OktaAuthProxy
           session[:remote_ip] = request.env['HTTP_X_REAL_IP']
         end
         extend_session
-        redirect to(params[:RelayState] || '/'), 307
+        redirect to(params[:RelayState] || '/')
       end
 
       send verb, '/auth/failure' do
