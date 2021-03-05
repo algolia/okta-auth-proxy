@@ -2,6 +2,7 @@ require 'sinatra/base'
 require 'omniauth'
 require 'omniauth-saml'
 require 'securerandom'
+require 'addressable'
 
 module OktaAuthProxy
   module OktaAuth
@@ -11,7 +12,7 @@ module OktaAuthProxy
     module AuthHelpers
       def protected!
         return if authorized?(request.host)
-        redirect to("/auth/saml?redirectUrl=#{URI::encode(request.path)}")
+        redirect to("/auth/saml?redirectUrl=#{Addressable::URI.escape(request.path)}")
       end
 
       def authorized?(host)

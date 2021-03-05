@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
   s.executables << 'okta-auth-proxy'
   s.homepage    = 'https://github.com/dalehamel/okta-auth-proxy'
   s.license = 'MIT'
+  s.add_runtime_dependency 'addressable', ['=2.7.0']
   s.add_runtime_dependency 'bigdecimal', ['=1.4.4']
   s.add_runtime_dependency 'sinatra', ['=2.1.0']
   s.add_runtime_dependency 'omniauth', ['=1.9.1']
