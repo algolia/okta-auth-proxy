@@ -17,8 +17,8 @@ Gem::Specification.new do |s|
   s.license = 'MIT'
   s.add_runtime_dependency 'bigdecimal', ['=1.4.4']
   s.add_runtime_dependency 'sinatra', ['=2.1.0']
-  s.add_runtime_dependency 'omniauth', ['=1.3.1']
-  s.add_runtime_dependency 'omniauth-saml', ['=1.5.0']
+  s.add_runtime_dependency 'omniauth', ['=1.9.1']
+  s.add_runtime_dependency 'omniauth-saml', ['=1.10.3']
   s.add_runtime_dependency 'em-synchrony', ['=1.0.4']
   s.add_runtime_dependency 'thin', ['=1.8.0']
   s.add_runtime_dependency 'thor', ['>= 0.19.1']
