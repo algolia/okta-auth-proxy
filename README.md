@@ -1,3 +1,5 @@
+:no_entry: [DEPRECATED] This project is not maintained anymore, you maybe interested in [oauth2-proxy](https://github.com/oauth2-proxy/oauth2-proxy).
+
 # Okta Auth Proxy
 
 The idea is that you run this along-side an nginx instance, and it'll handle authentication for you for an application or page that doesn't understand SAML or okta.
